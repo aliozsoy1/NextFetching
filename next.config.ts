@@ -1,8 +1,13 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
-  output: 'export',
-  basePath: '/NextFetching',
-  assetPrefix: '/NextFetching/',
+  reactStrictMode: true,
+  images: {
+    unoptimized: true, // Disable default image optimization
+  },
+  assetPrefix: isProd ? '/NextFetching/' : '',
+  basePath: isProd ? '/NextFetching' : '',
+  output: 'export'
 };
 
-module.exports = nextConfig;
+export default nextConfig;
