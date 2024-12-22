@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
+  output: 'export',
+  basePath: '/NextFetching',  
+  assetPrefix: '/NextFetching/', 
 };
 
-export default nextConfig;
+module.exports = nextConfig;
