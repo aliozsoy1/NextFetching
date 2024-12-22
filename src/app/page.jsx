@@ -11,7 +11,7 @@ export default function page() {
   return (
     <div className='divbody'>
         <div>
-            <h2>Kullanıcılarrrr</h2>
+            <h2>Kullanıcılarrrrrr</h2>
             <Users setActiveUserId={setActiveUserId}/>
         </div>
         <div>
